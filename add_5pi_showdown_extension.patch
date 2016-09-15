@@ -1,0 +1,13 @@
+diff --git a/core/server/models/post.js b/core/server/models/post.js
+index 49d016c..bc08a57 100644
+--- a/core/server/models/post.js
++++ b/core/server/models/post.js
+@@ -6,7 +6,7 @@ var _              = require('lodash'),
+     sequence       = require('../utils/sequence'),
+     errors         = require('../errors'),
+     Showdown       = require('showdown-ghost'),
+-    converter      = new Showdown.converter({extensions: ['ghostgfm', 'footnotes', 'highlight']}),
++    converter      = new Showdown.converter({extensions: ['ghostgfm', 'footnotes', 'highlight', 'fivepi']}),
+     ghostBookshelf = require('./base'),
+     events         = require('../events'),
+     config         = require('../config'),
