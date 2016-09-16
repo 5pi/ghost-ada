@@ -3,7 +3,7 @@ var widths = [ 150, 350, 500, 600, 650 ]
 
 function replace_image(match, src, alt) {
   var src = domain + src
-  var widths = [ 150, 350, 500, 600, 650 ]
+  var widths = [ 150, 350, 500, 600, 680 ]
   srcset = widths.map((w) => src + '?w=' + w + ' ' + w + 'w').join(',')
   return '<img src="' + src + '" srcset="' + srcset + '" alt="' + alt + '">'
 }
